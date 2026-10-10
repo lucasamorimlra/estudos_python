@@ -1,15 +1,19 @@
-#exercicio
+"""
+Iterando strings com while
+"""
+#       012345678910
+# nome = 'Luiz Otávio'  # Iteráveis
+#      1110987654321
 
-primeiro_valor = input('Digite um valor: ')
-segundo_valor = input('Digite outro valor: ')
 
-if primeiro_valor >= segundo_valor:
-    print(
-        f'{primeiro_valor=} é maior ou igual '
-        f'ao que {segundo_valor=}'
-    )
-else:
-    print(
-        f'{segundo_valor=} é maior '
-        f'do que {primeiro_valor=}'
-    )
+nome = 'Maria Helena'  # Iteráveis
+
+indice = 0
+novo_nome = ''
+while indice < len(nome):
+    letra = nome[indice]
+    novo_nome += f'*{letra}'
+    indice += 1
+
+novo_nome += '*'
+print(novo_nome)

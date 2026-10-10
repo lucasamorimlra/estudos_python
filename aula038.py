@@ -1,17 +1,19 @@
 """
-Operadores de comparação (relacionais)
-OP      Significado         Exemplo (True)
->       maior               2 > 1
->=      maior ou igual      2 >= 2
-<       menor               1 < 2
-<=      menor ou igual      2 <= 2
-==      igual               'a' == 'a'
-!=      diferente           'a' != 'b'
+Repetições
+while (enquanto)
+Executa uma ação enquanto uma condição for verdadeira
+Loop infinito -> Quando um código não tem fim
 """
-maior = 2 > 1
-maior_ou_igual = 2 >= 2
-menor = 1 < 2
-menor_ou_igual = 2 <= 2
-igual = 'a' == 'a'
-diferente = 'a' != 'b'
-print('Olha meu print aqui')
+qtd_linhas = 5
+qtd_colunas = 5
+
+linha = 1
+while linha <= qtd_linhas:
+    coluna = 1
+    while coluna <= qtd_colunas:
+        print(f'{linha=} {coluna=}')
+        coluna += 1
+    linha += 1
+
+
+print('Acabou')
